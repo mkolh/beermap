@@ -1,0 +1,25 @@
+{
+  "name": "beer",
+  "version": "1.0.0",
+  "description": "SeedTip =======",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkolh/SeedTip.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mkolh/SeedTip/issues"
+  },
+  "homepage": "https://github.com/mkolh/SeedTip#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "lodash": "^3.10.1",
+    "method-override": "^2.3.5",
+    "request": "^2.62.0"
+  }
+}

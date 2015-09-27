@@ -1,0 +1,125 @@
+<html>
+<head>
+  <title>Discover Breweries</title>
+
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<style>
+/*
+Based on a custom Bootstrap 3.1 theme from http://bootply.com\
+*/
+
+.alert-danger{
+  visibility: hidden;
+}
+html,body{
+    height:100%;
+}
+
+body{
+    padding-top:50px; /*padding for navbar*/
+}
+
+.navbar-custom .icon-bar {
+  background-color:#fff;
+}
+
+.navbar-custom {
+  background-color: #168ccc;
+    color:#fff;
+}
+
+.navbar-custom li>a:hover,.navbar-custom li>a:focus {
+  background-color:#49bfff;
+}
+
+.navbar-custom a{
+    color:#fefefe;
+}
+
+.navbar-custom .form-control:focus {
+  border-color: #49bfff;
+  outline: 0;
+  -webkit-box-shadow: inset 0 0 0;
+  box-shadow: inset 0 0 0;
+}
+
+#main, #main>.row {
+  height:100%;
+}
+
+#main>.row {
+    overflow-y:scroll;
+}
+
+#map-canvas {
+    width:100%;
+    height:500px;
+}
+</style>
+</head>
+<body>
+<!-- begin template -->
+<div class="navbar navbar-custom navbar-fixed-top">
+ <div class="navbar-header"><a class="navbar-brand" href="#">Michael Kolhede</a>
+      <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Placeholder</a></li>
+        <li><a href="#">Other Project</a></li>
+        <li><a href="#">Other Project</a></li>
+        <li>&nbsp;</li>
+      </ul>
+    </div>
+</div>
+
+
+<div class="container-fluid" id="main">
+  <div class="row">
+
+    <div class="col-md-12">
+      <div class="col-md-4" id="left">
+    
+      <h2>Google Maps Demo</h2>
+      
+
+      <p>Use this tool to discover awesome breweries, big and small, tasty and terrible, in your neighborhood - or anywhere in the world. Just type in the name of a city or state and hit go!</p>
+          
+      <p>
+      <a href="#" data-toggle="popover" title="Popover Header" data-placement="bottom" data-content="Some content inside the popover">Github</a>
+      </p>
+      
+      <hr> 
+        <form method="get" id="chooseZip">
+            <div class="form-group">
+                <label>Location</label>
+                <input type="text" class="form-control" id="textZip" placeholder="Type in a City or State!">
+       </div>
+            <button type="submit" class="btn btn-default">Search</button>
+            <div class="alert alert-danger" role="alert" id="no-results">No results! Try typing in a different State, City or Town!</div>
+        </form>
+      <hr>      
+
+    </div>
+    <div class="col-md-8">
+      <div id="map-canvas"></div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- end template -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key="></script>
+
+<script language="javascript" type="text/javascript" src="map.js"></script>
+</body>
+</html>
